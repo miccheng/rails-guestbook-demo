@@ -1,0 +1,8 @@
+---
+applications:
+- name: guestbook
+  buildpack: ruby_buildpack
+  memory: 256M
+  disk_quota: 512M
+  services:
+    - postgres-db
