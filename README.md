@@ -32,8 +32,8 @@ cf push guestbook --hostname demo-guestbook
 4. Migrate DB
 
 	```
-cf push guestbook -c 'rake db:migrate' -i 1
-cf push guestbook -c 'null'
+cf push guestbook -c "rake db:migrate" -i 1
+cf push guestbook -c "null"
 ```
 
 ## References
