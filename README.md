@@ -4,6 +4,7 @@
 
 - Visit [http://run.pivotal.io](http://run.pivotal.io) and register for a free PWS account.
 - Use a mobile number (they will send you an SMS) you have not used before to claim the free trial.
+- Install the `cf` CLI ([download here](https://github.com/cloudfoundry/cli#downloads)).
 
 ## Deploy to PWS
 
@@ -34,3 +35,10 @@ cf push guestbook --hostname demo-guestbook
 cf push guestbook -c 'rake db:migrate' -i 1
 cf push guestbook -c 'null'
 ```
+
+## References
+
+- [PCF Developer Guide](http://docs.pivotal.io/pivotalcf/1-7/devguide/index.html)
+- [Deploying with Application Manifests](http://docs.pivotal.io/pivotalcf/1-7/devguide/deploy-apps/manifest.html)
+- [Managing Service Instances with the CLI
+](http://docs.pivotal.io/pivotalcf/1-7/devguide/services/managing-services.html)
