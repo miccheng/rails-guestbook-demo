@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @guest.name
+p
+  strong Email:
+  = @guest.email
+p
+  strong Comments:
+  = @guest.comments
+p
+  strong Publish:
+  = @guest.publish
+p
+  strong Publish date:
+  = @guest.publish_date
+
+= link_to 'Edit', edit_guest_path(@guest)
+'|
+= link_to 'Back', guests_path

@@ -1,0 +1,24 @@
+= form_for @guest do |f|
+  - if @guest.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@guest.errors.count, "error")} prohibited this guest from being saved:"
+      ul
+        - @guest.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :comments
+    = f.text_area :comments
+  .field
+    = f.label :publish
+    = f.check_box :publish
+  .field
+    = f.label :publish_date
+    = f.datetime_select :publish_date
+  .actions = f.submit
